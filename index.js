@@ -70,7 +70,7 @@ const loadQuiz = async () => {
 
 // Displaying quiz on quiz page
 const displayQuiz = data => {
-  // console.log(data);
+  console.log(data);
   if (!data) {
     quizContainer.innerHTML = "";
     return;

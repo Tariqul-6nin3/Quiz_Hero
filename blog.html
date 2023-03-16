@@ -25,9 +25,10 @@
           </p>
         </div>
         <button
+          onclick="location.href='./index.html'"
           class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
           id="quiz-btn">
-          Quiz Test
+          Home
         </button>
       </nav>
     </header>
@@ -182,6 +183,68 @@
             </p>
           </div>
         </div>
+        <section class="mt-12 shadow-2xl rounded-2xl">
+          <div
+            tabindex="0"
+            class="collapse collapse-open border border-base-300 bg-base-100 rounded-box">
+            <div
+              class="collapse-title text-2xl font-semibold mt-2 text-black font-mono">
+              Explanation of
+              <span class="italic text-red-600">"quizTimer"</span> function:
+            </div>
+            <div class="collapse-content text-black text-lg px-8 py-4">
+              <p>
+                The function takes in one parameter, dismiss, which is a boolean
+                value that determines whether the timer should be stopped or
+                not. If dismiss is true, the timer is stopped by clearing the
+                interval using the clearInterval method and then the function
+                returns. If dismiss is not true, the function sets up a timer
+                using the setInterval method. This method executes a given
+                function repeatedly, with a specified time delay between each
+                execution, until it is stopped. Within the setInterval function,
+                the timer updates the count on the webpage every second by
+                incrementing the count variable and then updating the innerHTML
+                of a specified HTML element with the new count value. The count
+                is formatted into minutes and seconds and displayed on the
+                webpage. If the count goes over 60 seconds, the color of the
+                count on the webpage alternates between red shades every 2
+                seconds to visually alert the user of the time limit.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="mt-4 shadow-2xl rounded-2xl">
+          <div
+            tabindex="0"
+            class="collapse collapse-open border border-base-300 bg-base-100 rounded-box">
+            <div
+              class="collapse-title text-2xl font-semibold mt-2 text-black font-mono">
+              Explanation of
+              <span class="italic text-red-600">"chooseQuiz"</span> function:
+            </div>
+            <div class="collapse-content text-black text-lg px-8 py-4">
+              <p>
+                This JavaScript function is designed to handle the user's answer
+                selection in a quiz. It takes two parameters - index, which
+                represents the index of the current question being answered, and
+                givenAns, which is the answer selected by the user. The function
+                checks whether the id of the current question being answered
+                already exists in the answers array. If it does, the function
+                finds the matching question and answer object in the answers
+                array using a find method, and then replaces the existing answer
+                with the newly selected answer. If the current question being
+                answered does not exist in the answers array, the function
+                creates a new object with the id of the current question and the
+                givenAns parameter, and then pushes that object to the answers
+                array. Once the answers array has been updated with the user's
+                selected answers, the function calls the displayAnswers
+                function, passing in the updated answers array. This function is
+                not shown in the code provided but it presumably displays the
+                user's selected answers on the webpage.
+              </p>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
   </body>
